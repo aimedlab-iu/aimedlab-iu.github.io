@@ -112,7 +112,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo{
-    color: #fff;
+    color: #000000;
    
     font-weight: 600;
 }
@@ -129,7 +129,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: #000000;
     font-size: 14px;
     gap: 50px;
     padding: 0 10px;
@@ -233,14 +233,14 @@ section .title::after{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/img.jpg") no-repeat center center/cover;
+  /* background: url("/img.jpg") no-repeat center center/cover; */
   height: 100vh;
-  color: #fff;
+  color: #000000;
   min-height: 500px;
   font-family: 'Lato', sans-serif;
   background-attachment: fixed;
 }
-
+/* 
 .home .overlay {
   position: absolute;
   top: 0;
@@ -249,7 +249,7 @@ section .title::after{
   height: 100%;
   background: linear-gradient(to right, rgba(15, 15, 30, 0.85), rgba(47, 64, 151, 0.65));
   z-index: 1;
-}
+} */
 
 .home .max-width {
   position: relative;
@@ -287,7 +287,7 @@ section .title::after{
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 40px;
-  color: #e0e0e0;
+  color: #2F4097;
 }
 
 /* CTA Button */
