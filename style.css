@@ -426,15 +426,15 @@ section .title::after{
 
     .team-card {
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      /* border-radius: 12px; */
+      /* box-shadow: 0 4px 10px rgba(0,0,0,0.08); */
       padding: 30px 20px;
       transition: transform 0.3s ease;
     }
-
+/* 
     .team-card:hover {
       transform: translateY(-8px);
-    }
+    } */
 
     .circle {
       width: 70px;
