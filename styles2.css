@@ -234,7 +234,7 @@ section .title::after{
   justify-content: center;
   align-items: center;
   /* background: url("/img.jpg") no-repeat center center/cover; */
-  height: 100vh;
+  height: 50vh;
   color: #000000;
   min-height: 500px;
   font-family: 'Lato', sans-serif;
@@ -295,7 +295,7 @@ section .title::after{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: #f19029;
+  background: #0072ff;
   color: #fff;
   font-size: 1.1rem;
   padding: 14px 28px;
@@ -303,12 +303,12 @@ section .title::after{
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(241, 144, 41, 0.4);
+  box-shadow: 0 4px 15px rgba(41, 58, 241, 0.4);
 }
 
 .home .cta-btn:hover {
-  background: #fff;
-  color: #2f4097;
+  background: #000000;
+  color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
@@ -372,6 +372,9 @@ section .title::after{
         margin: 20px 0;
         font-size: 15px;
         color: #2F4097;
+    }
+    .navbar .menu li a.active{
+      color:white;
     }
     .home .home-content .text-2{
         font-size: 50px;

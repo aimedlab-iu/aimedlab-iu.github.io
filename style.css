@@ -1044,3 +1044,6 @@ section .title::after{
     }
 
   
+    .news {
+      display: flex;
+    }
