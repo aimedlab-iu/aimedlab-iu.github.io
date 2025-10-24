@@ -104,7 +104,10 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 25px 0;
-    background: rgb(47, 64, 151);
+    background: #2F4097;
+}
+.navbar.sticky li a{
+  color: #ff9900;
 }
 .navbar .max-width{
     display: flex;
@@ -139,7 +142,11 @@ section .title::after{
  
 }
 .navbar .menu li a:hover{
-    color: #4a6cf6;
+    color: #2F4097;
+}
+
+.navbar.sticky .menu li a{
+  color: #ffffff;
 }
 .navbar.sticky .menu li a:hover{
     color: #ff9900;
@@ -295,7 +302,7 @@ section .title::after{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: #0072ff;
+  background: #2F4097;
   color: #fff;
   font-size: 1.1rem;
   padding: 14px 28px;
@@ -429,7 +436,7 @@ section .title::after{
   .team-section {
       text-align: center;
       padding: 60px 20px;
-       background: #f9f9f9;
+      background: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
@@ -440,7 +447,7 @@ section .title::after{
     }
 
     .team-section h2 span {
-      color: #0072ff;
+      color: #2F4097;
     }
 
     .team-section p {
@@ -477,7 +484,7 @@ section .title::after{
       height: 70px;
       margin: 0 auto 20px;
       border-radius: 50%;
-      background: #0072ff;
+      background: #2F4097;
       color: #fff;
       display: flex;
       justify-content: center;
@@ -493,7 +500,7 @@ section .title::after{
 
     .team-card h4 {
       margin: 5px 0 15px;
-      color: #0072ff;
+      color: #2F4097;
       font-weight: normal;
     }
 
@@ -529,7 +536,7 @@ section .title::after{
     }
 
     .icons a:hover {
-      color: #0072ff;
+      color: #2F4097;
     }
 
     /* Responsive tweak */
