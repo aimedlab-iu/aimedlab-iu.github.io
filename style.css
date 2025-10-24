@@ -744,11 +744,6 @@ section .title::after{
 
 
 
-
-
-
-
-
 /* research */
 
     .containerss{
@@ -1079,7 +1074,70 @@ section .title::after{
       }
     }
 
-  
+    .news-section {
+      padding: 60px 20px;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .news-section h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .news-section h2 span {
+      color: #2F4097;
+    }
+
+    .news-section p {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
     .news {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
     }
+    
+    .news-img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    /* Text styling */
+    .news p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #333;
+    }
+    
+    /* --- Responsive behavior --- */
+    @media (max-width: 768px) {
+      .news {
+        flex-direction: column;
+        text-align: center;    
+      }
+    
+      .news-img {
+        margin-right: 0;
+        width: 100%;
+        max-width: 90%;
+      }
+    
+      .news p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+      }
+    }
+    
