@@ -600,10 +600,13 @@ section .title::after{
   /* Grid layout: wide left, narrower right */
   .contact-grid{
     margin-top:34px;
-    display:grid;
-    grid-template-columns: 1fr 420px;
-    gap:30px;
-    align-items:start;
+    display:flex;
+    /* grid-template-columns: 1fr 420px; */
+    /* gap:30px; */
+    align-items: center;
+    justify-content: center;
+
+    /* align-items:start; */
   }
 
   /* Left form card */
@@ -691,7 +694,7 @@ section .title::after{
     background:var(--card);
     border-radius:12px;
     border:1px solid var(--soft-border);
-    padding:18px;
+    padding:30px 48px;
     box-shadow: 0 6px 18px rgba(13,24,48,0.03);
   }
 
