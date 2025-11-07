@@ -452,21 +452,22 @@ section .title::after{
 
     .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       justify-content: center;
       align-items: stretch;
       max-width: 1000px;
       margin: 0 auto;
     }
-
+    
     .team-card {
       background: #fff;
-      /* border-radius: 12px; */
-      /* box-shadow: 0 4px 10px rgba(0,0,0,0.08); */
       padding: 30px 20px;
+      min-width: 200px;
       transition: transform 0.3s ease;
     }
+    
+    
 /* 
     .team-card:hover {
       transform: translateY(-8px);
