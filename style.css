@@ -465,8 +465,7 @@ section .title::after{
       padding: 30px 20px;
       min-width: 200px;
       transition: transform 0.3s ease;
-    }
-    
+    }    
     
 /* 
     .team-card:hover {
