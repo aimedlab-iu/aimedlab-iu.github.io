@@ -4,47 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
     <title>Research</title>
 </head>
 <body>
-
-        <div class="scroll-up-btn">
+  <main>
+    <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        
-        <div class="nav-logo">
+      </div>
+      <nav class="navbar">
+          
+          <div class="nav-logo">
 
-          <div class="iu-logo" >
-            <img class="nav-logo-iu"src="imgs/IU-white.png" alt="IU Logo">
-            <span>Indianapolis</span>
+            <div class="iu-logo" >
+              <img class="nav-logo-iu"src="imgs/IU-white.png" alt="IU Logo">
+              <span>Indianapolis</span>
+            </div>
+
+            <div class="lab-info">
+              <h4>AIMED Lab</h4>
+              <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+            </div>
           </div>
 
-          <div class="lab-info">
-            <h4>AIMED Lab</h4>
-            <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+          <div class="menu-hamburger" onclick="toggleMenu()">
+              ☰
           </div>
-        </div>
 
-        <div class="menu-hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+          <ul class="nav-items">
+                  <li><a href="index.html" class="menu-btn">Home</a></li>
+                  <li><a href="research.html" class="menu-btn nav-active">Research</a></li>
+                  <li><a href="publications.html" class="menu-btn">Publications</a></li>
+                  <li><a href="people.html" class="menu-btn">People</a></li>
+                  <li><a href="software.html" class="menu-btn">Software</a></li>
+                  <li><a href="teaching.html" class="menu-btn">Teaching</a></li>
+                  <li><a href="contact.html" class="menu-btn">Contact</a></li>
+          </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars" style="font-weight: light"></i>
+            </div>
+      </nav>
 
-        <ul class="nav-items">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
-                <li><a href="research.html" class="menu-btn nav-active">Research</a></li>
-                <li><a href="publications.html" class="menu-btn">Publications</a></li>
-                <li><a href="people.html" class="menu-btn">People</a></li>
-                <li><a href="software.html" class="menu-btn">Software</a></li>
-                <li><a href="teaching.html" class="menu-btn">Teaching</a></li>
-                <li><a href="contact.html" class="menu-btn">Contact</a></li>
-        </ul>
-          <div class="menu-btn">
-            <i class="fas fa-bars" style="font-weight: light"></i>
+      <section class="research">
+        <section class="research-container">
+            <h2>Our <span style="color: var(--primary-color);">Research</span> Focus</h2>
+            <p>Explore our published research contributions to the fields of educational technology, human-computer interaction, and artificial intelligence.</p>
+          <!-- <hr> -->
+        </section>
+
+        <section class="research-projects">
+          <div class="research-project">
+            <div class="research-project-content">
+              <h3>
+                Computational Imaging Biomarkers Leveraging Computer Vision and Image Processing
+              </h3>
+              <p>The project focuses on advancing prostate cancer (PCa) risk stratification and progression monitoring through radiomics-based approaches. By analyzing bi-parametric MRI (T2-weighted and diffusion-weighted imaging), the studies explore intra- and peri-tumoral radiomic features to enhance risk classification based on D’Amico's system, achieving improved predictive accuracy over conventional methods like PI-RADS. Additionally, the project identifies unique prostate shape patterns associated with biochemical recurrence, highlighting the peri-tumoral region's diagnostic potential. Furthermore, delta radiomics like quantifying temporal changes in imaging features are linked to pathologic upgrades in PCa patients under active surveillance, outperforming traditional clinical variables. Collectively, these studies demonstrate the power of integrating advanced imaging biomarkers with machine learning for personalized and precise PCa management, laying the groundwork for broader clinical applications.</p>
+            </div>
+
+            <div class="section-img">
+              <div class="research-images">
+                <img src="imgs/research/Img2.jpg" alt="Research Image 1">
+              </div>
+
+              <div class="research-project-references">
+                <br> <h4>References:</h4>
+                <ul>
+                  <li>Algohary, A., Shiradkar, R., Pahwa, S., Purysko, A., Verma, S., Moses, D., Shnier, R., Haynes, A., Delprado, W., Thompson, J., Tirumani, S., Mahran, A., Rastinehad, A. R., Ponsky, L., Stricker, P. D., & Madabhushi, A. <a href="https://doi.org/10.3390/cancers12082200" target="_blank">Read Paper</a></li>
+                  <li>Ghose, S., Shiradkar, R., Rusu, M., Mitra, J., Thawani, R., Feldman, M., Gupta, A. C., Purysko, A. S., Ponsky, L., & Madabhushi, A. <a href="https://doi.org/10.1038/s41598-017-13443-8" target="_blank">Read Paper</a></li>
+                  <li>Midya, A., Hiremath, A., Huber, J., Viswanathan, V. S., Omil-Lima, D., Mahran, A., Bittencourt, L. K., Tirumani, S. H., Ponsky, L., Shiradkar, R., & Madabhushi, A. <a href="https://doi.org/10.3389/fonc.2023.1166047" target="_blank">Read Paper</a></li>
+                </ul>
+                <ul class="research-project-keywords">
+                  <li>Radiomics</li>
+                  <li>Prostate Cancer</li>
+                  <li>MRI</li>
+                  <li>Machine Learning</li>
+                </ul>
+              </div>
+            </div>
           </div>
-    </nav>
 
+          <div class="research-project">
+            <div class="research-project-content">
+              <h3>
+                AI and Medical Imaging-Based Clinical Decision Support Tools for Disease Diagnosis and Prognosis              
+              </h3>
+              <p>
+                The project concentartes on leveraging advanced imaging and AI-driven analytics to improve prostate cancer (PCa) risk stratification, prognosis, and treatment planning. A retrospective study on integrated nomogram develops the ClaD nomogram, integrating deep learning, PI-RADS scoring, and clinical variables, which significantly enhances the identification of clinically significant PCa and prediction of biochemical recurrence compared to conventional models while the study on imaging nomogram introduces the RadClip nomogram, a radiomics-clinicopathologic model using bi-parametric MRI to pre-operatively predict biochemical recurrence-free survival and adverse pathology, outperforming existing prognostic tools like CAPRA and Decipher. Together, these studies showcase the potential of AI-enhanced imaging biomarkers and predictive models in aiding personalized and precise PCa management, enabling better therapeutic decisions.
+              </p>
+            </div>
 
+            <div class="section-img">
+              <div class="research-images">
+                <img src="imgs/research/Img1.jpg" alt="Research Image 1">
+              </div>
+
+              <div class="research-project-references">
+                <br> <h4>References:</h4>
+                <ul>
+                  <li>Hiremath, A., Shiradkar, R., Fu, P., Mahran, A., Rastinehad, A. R., Tewari, A., Tirumani, S. H., Purysko, A., Ponsky, L., & Madabhushi, A. <a href="https://doi.org/10.1016/s2589-7500(21)00082-0" target="_blank">Read Paper</a></li>
+                  <li>Li, L., Shiradkar, R., Leo, P., Algohary, A., Fu, P., Tirumani, S. H., Mahran, A., Buzzy, C., Obmann, V. C., Mansoori, B., El-Fahmawi, A., Shahait, M., Tewari, A., Magi-Galluzzi, C., Lee, D., Lal, P., Ponsky, L., Klein, E., Purysko, A. S., & Madabhushi, A. <a href="https://doi.org/10.1016/j.ebiom.2020.103163" target="_blank">Read Paper</a></li>
+                </ul>
+                <ul class="research-project-keywords">
+                  <li>AI</li>
+                  <li>Decision Support</li>
+                  <li>Prognosis</li>
+                  <li>Nomograms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="research-project">
+            <div class="research-project-content">
+              <h3>
+                Tools to Test Reproducibility, Bias, and Translation of Medical Imaging AI
+              </h3>
+              <p>    
+                This project is about evaluating the reliability, sensitivity, and reproducibility of AI-driven tools in medical imaging for prostate cancer (PCa) diagnosis and risk stratification. The studies assess the test-retest repeatability of a U-Net deep learning model in detecting and segmenting clinically significant PCa using diffusion-weighted imaging, demonstrating high repeatability and robustness without systematic bias and short-term repeatability of radiomics and machine learning methods on prostate DWI, identifying high-performing features with consistent classification performance. It also investigates the impact of inter-reader variations in lesion delineation on CNN-based PCa risk stratification, highlighting the models' moderate sensitivity to annotation variability and the importance of comprehensive region-of-interest (ROI) delineations. Together, these studies provide critical insights into the reproducibility and generalizability of AI models, paving the way for reliable clinical translation of medical imaging AI tools.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <div class="research-images">
+                <img src="imgs/research/Img3.jpg" alt="Research Image 1">
+              </div>
+
+              <div class="research-project-references">
+                <br> <h4>References:</h4>
+                <ul>
+                  <li>Hiremath, A., Shiradkar, R., Merisaari, H., Prasanna, P., Ettala, O., Taimen, P., Aronen, H. J., Boström, P. J., Jambor, I., & Madabhushi, A. <a href="https://doi.org/10.1007/s00330-020-07065-4" target="_blank">Read Paper</a></li>
+                  <li>Merisaari, H., Taimen, P., Shiradkar, R., Ettala, O., Pesola, M., Saunavaara, J., Boström, P. J., Madabhushi, A., Aronen, H. J., & Jambor, I. <a href="https://doi.org/10.1002/mrm.28058" target="_blank">Read Paper</a></li>
+                  <li>Roge, A., Hiremath, A., Sobota, M., Tirumani, S. H., Bittencourt, L. K., Ream, J., Ward, R., Olaniyan, H., Verma, S., Purysko, A., Madabhushi, A., & Shiradkar, R. <a href="https://doi.org/10.1117/12.2613245" target="_blank">Read Paper</a></li>
+                </ul>
+                <ul class="research-project-keywords">
+                  <li>Radiomics</li>
+                  <li>Prostate Cancer</li>
+                  <li>MRI</li>
+                  <li>Machine Learning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="research-project">
+            <div class="research-project-content">
+              <h3>
+                Multi-Modal Health Data Integration              
+              </h3>
+              <p>
+                The project refers to leveraging advanced radiology, pathology, and computational frameworks to enhance prostate cancer diagnosis, prognosis, and treatment planning. By integrating radiomics from pre-treatment MRI with pathomics from post-surgical pathology, the studies demonstrate improved prognostication for outcomes such as rising PSA levels and extraprostatic extension. Magnetic resonance fingerprinting (MRF) further correlates imaging biomarkers with tissue composition, distinguishing prostate cancer, prostatitis, and normal tissues. Additionally, a computational framework (Rad-TRaP) combines radiomics with deformable co-registration tools to generate targeted radiotherapy treatment plans that optimize dosage to cancerous regions while sparing healthy tissues. This comprehensive approach highlights the power of combining multi-modal data, deep learning, and machine learning to improve personalized care and clinical decision-making in prostate cancer management.
+              </p>
+            </div>
+
+            <div class="section-img">
+              <div class="research-images">
+                <img src="imgs/research/Img4.jpg" alt="Research Image 1">
+              </div>
+
+              <div class="research-project-references">
+                <br> <h4>References:</h4>
+                <ul>
+                  <li>Hiremath, A., Corredor, G., Li, L., Leo, P., Magi-Galluzzi, C., Elliott, R., Purysko, A., Shiradkar, R., & Madabhushi, A. <a href="https://doi.org/10.1016/j.heliyon.2024.e29602" target="_blank">Read Paper</a></li>
+                  <li>Shiradkar, R., Panda, A., Leo, P., Janowczyk, A., Farre, X., Janaki, N., Li, L., Pahwa, S., Mahran, A., Buzzy, C., Fu, P., Elliott, R., MacLennan, G., Ponsky, L., Gulani, V., & Madabhushi, A. <a href="https://doi.org/10.1007/s00330-020-07214-9" target="_blank">Read Paper</a></li>
+                  <li>Shiradkar, R., Podder, T. K., Algohary, A., Viswanath, S., Ellis, R. J., & Madabhushi, A. <a href="https://doi.org/10.1186/s13014-016-0718-3" target="_blank">Read Paper</a></li>
+                </ul>
+                <ul class="research-project-keywords">
+                  <li>Multi-Modal</li>
+                  <li>Radiomics</li>
+                  <li>Pathomics</li>
+                  <li>Treatment Planning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2026 - <span style="font-weight: bold;">AiMed Lab</span><br>
+      <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+      <br></p>
+  </footer>
 </body>
+<script src="scripts.js"></script>
 </html>
