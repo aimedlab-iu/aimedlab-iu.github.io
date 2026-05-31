@@ -8,7 +8,18 @@
     font-family: 'Arial', sans-serif;
 }
 
+body{
+    min-height: 100vh;
+    max-width: 100%;  
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
 
+main {
+    flex: 1;
+}
 /* navbar */
 
 .navbar {
@@ -213,9 +224,14 @@
 
 /* about lab */
 .about-lab {
-    display: flex;
     padding: 2rem;
     max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -257,12 +273,18 @@
 .research-area {
     background-color: #EDEBEB;
     padding: 2rem;
-    max-width: 100%;
+    width: 100%;
     padding: 3rem 11rem;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
-.research-area .header {
+.research-area .research-container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.research-area .header {    
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -274,7 +296,7 @@
 }
 
 .research-item {
-    max-width: 300px;
+    width: 300px;
     margin-right: 3rem;
 }
 
@@ -294,10 +316,15 @@
 
 /* news section */
 .news {
-    background-color: #f5f5f5;
     padding: 2rem;
-    max-width: 100%;
+    width: 100%;
     padding: 3rem 11rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.news-container{
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -357,3 +384,69 @@
     margin: 1rem 0;
 }
 /* news section end */
+
+
+
+/* contact section */
+
+.contact-lab {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 100%;
+    padding: 3rem 11rem;
+    /* margin: 25vh auto; */
+}
+
+.contact-lab h2 {
+    margin-left:auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-lab p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-lab hr{
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-top: 0.4px solid #ccc;
+    width: 50%;
+}
+
+.contact-info-person {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.contact-person-info span {
+    margin-bottom: 3rem;
+}
+
+/* contact section end */
+
+/* footer begins */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-size : .8rem;
+    justify-content: center;
+    align-items: center;
+}
