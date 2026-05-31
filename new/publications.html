@@ -4,47 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
     <title>Publications</title>
 </head>
 <body>
-
-        <div class="scroll-up-btn">
+  <main>
+    <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        
-        <div class="nav-logo">
+      </div>
+      <nav class="navbar">
+          
+          <div class="nav-logo">
 
-          <div class="iu-logo" >
-            <img class="nav-logo-iu"src="imgs/IU-white.png" alt="IU Logo">
-            <span>Indianapolis</span>
+            <div class="iu-logo" >
+              <img class="nav-logo-iu"src="imgs/IU-white.png" alt="IU Logo">
+              <span>Indianapolis</span>
+            </div>
+
+            <div class="lab-info">
+              <h4>AIMED Lab</h4>
+              <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+            </div>
           </div>
 
-          <div class="lab-info">
-            <h4>AIMED Lab</h4>
-            <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+          <div class="menu-hamburger" onclick="toggleMenu()">
+              ☰
           </div>
-        </div>
 
-        <div class="menu-hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+          <ul class="nav-items">
+                  <li><a href="index.html" class="menu-btn">Home</a></li>
+                  <li><a href="research.html" class="menu-btn">Research</a></li>
+                  <li><a href="publications.html" class="menu-btn nav-active">Publications</a></li>
+                  <li><a href="people.html" class="menu-btn">People</a></li>
+                  <li><a href="software.html" class="menu-btn">Software</a></li>
+                  <li><a href="teaching.html" class="menu-btn">Teaching</a></li>
+                  <li><a href="contact.html" class="menu-btn">Contact</a></li>
+          </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars" style="font-weight: light"></i>
+            </div>
+      </nav>
+      
+      <section class="publication">
+        <section class="publication-container">
+            <h2>Our <span style="color: var(--primary-color);">Publications</span></h2>
+            <p>Explore our published research contributions to the fields of educational technology, human-computer interaction, and artificial intelligence.</p>
+          <!-- <hr> -->
+        </section>
 
-        <ul class="nav-items">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
-                <li><a href="research.html" class="menu-btn">Research</a></li>
-                <li><a href="publications.html" class="menu-btn nav-active">Publications</a></li>
-                <li><a href="people.html" class="menu-btn">People</a></li>
-                <li><a href="software.html" class="menu-btn">Software</a></li>
-                <li><a href="teaching.html" class="menu-btn">Teaching</a></li>
-                <li><a href="contact.html" class="menu-btn">Contact</a></li>
-        </ul>
-          <div class="menu-btn">
-            <i class="fas fa-bars" style="font-weight: light"></i>
+        <section class="publication-projects">
+          <div class="publication-project">
+            <div class="publication-project-content">
+              <h4>Journal Article | 2020</h4><br>
+              <h3>
+                Combination of Peri-Tumoral and Intra-Tumoral Radiomic Features on Bi-Parametric MRI Accurately Stratifies Prostate Cancer Risk: A Multi-Site Study
+              </h3>
+              <p>Multi-site study showing how peri- and intra-tumoral radiomic features from bi-parametric MRI improve prostate cancer risk stratification across clinical settings.</p><br>
+              <span>Cancers • 12(8) • 2200</span>
+            </div>
+
+            <div class="publication-project-references">
+              <br> <h4>References:</h4>
+              <ul>
+                <li>Algohary, A., Shiradkar, R., Pahwa, S., Purysko, A., Verma, S., Moses, D., Shnier, R., Haynes, A., Delprado, W., Thompson, J., Tirumani, S., Mahran, A., Rastinehad, A. R., Ponsky, L., Stricker, P. D., & Madabhushi, A.</li>
+              </ul>
+              <ul class="publication-project-keywords">
+                <li>Radiomics</li>
+                <li>Prostate Cancer</li>
+                <li>MRI</li>
+              </ul>
+            </div> <br>
+
+            <div>
+              <p>Published in Cancers</p>
+              <h4>    
+                <a href="https://doi.org/10.3390/cancers12082200" target="_blank" class="pub-view">
+                  Read Paper
+                </a>
+              </h4>
+            </div>
+
           </div>
-    </nav>
 
+          <div class="publication-project">
+            <div class="publication-project-content">
+              <h4>Conference Paper | 2018</h4><br>
+              <h3>
+                Learning from Multi-Institutional Data for Prostate MRI Segmentation and Clinical Outcome Prediction
+              </h3>
+              <p>
+                Discusses multi-institutional data sharing for developing robust machine learning models in prostate MRI segmentation and clinical predictions.
+              </p><br>
+              <span>SPIE Medical Imaging</span>
+            </div>
 
+            <div class="publication-project-references">
+              <br> <h4>References:</h4>
+              <ul>
+                <li>Armato, S. G., Huisman, H., Madabhushi, A., & Rosen, M.</li>
+              </ul>
+              <ul class="publication-project-keywords">
+                <li>Machine Learning</li>
+                <li>Segmentation</li>
+                <li>Prostate MRI</li>
+              </ul>
+            </div> <br>
+
+            <div>
+              <p>Presented at SPIE Medical Imaging</p>
+              <h4>    
+                <a href="https://doi.org/10.1117/12.2293717" target="_blank" class="pub-view">Read Paper</a>
+              </h4>
+            </div>
+            
+          </div>
+
+          <div class="publication-project">
+            <div class="publication-project-content">
+              <h4>Review Article | 2022</h4><br>
+              <h3>
+                Artificial Intelligence in Prostate Cancer Imaging: Past, Present, and Future
+              </h3>
+              <p>
+                A review of AI applications in prostate cancer imaging, covering historical developments, current methods, and future directions.
+              </p><br>
+              <span>Diagnostics • 12(9) • 2071</span>
+            </div>
+
+            <div class="publication-project-references">
+              <br> <h4>References:</h4>
+              <ul>
+                <li>Cuocolo, R., Stanzione, A., Castaldo, A., De Lucia, D. R., Imbriaco, M., & Brancato, V.</li>
+              </ul>
+              <ul class="publication-project-keywords">
+                <li>Artificial Intelligence</li>
+                <li>Prostate Imaging</li>
+                <li>Diagnostics</li>
+              </ul>
+            </div> <br>
+
+            <div>
+              <p>Published in Diagnostics</p>
+              <h4>    
+              <a href="https://doi.org/10.3390/diagnostics12092071" target="_blank" class="pub-view">Read Paper</a>
+              </h4>
+            </div>
+
+          </div>
+
+          <div class="publication-project">
+            <div class="publication-project-content">
+              <h4>Journal Article | 2019</h4><br>
+              <h3>
+                Automated Detection of Prostate Cancer in Multiparametric MRI Using Deep Learning
+              </h3>
+              <p>
+                Demonstrates a deep learning model for automatic prostate cancer detection using multiparametric MRI, enhancing diagnostic accuracy.
+              </p><br>
+              <span>European Radiology • 29(3) • 1186–1196</span>
+            </div>
+
+            <div class="publication-project-references">
+              <br> <h4>References:</h4>
+              <ul>
+                <li> Schelb, P., Kohl, S., Radtke, J. P., Wiesenfarth, M., Kickingereder, P., Bickelhaupt, S., Fechter, T., Yaqubi, K., Kuder, T. A., Eble, M. J., Schlemmer, H. P., Maier-Hein, K. H., & Bonekamp, D.</li>
+              </ul>
+              <ul class="publication-project-keywords">
+                <li>Deep Learning</li>
+                <li>Multiparametric MRI</li>
+                <li>Prostate Cancer</li>
+              </ul>
+            </div> <br>
+
+            <div>
+              <p>Published in European Radiology</p>
+              <h4>    
+              <a href="https://doi.org/10.1007/s00330-018-5668-4" target="_blank" class="pub-view">Read Paper</a>
+              </h4>
+            </div>
+            
+          </div>
+
+          <div class="publication-project">
+            <div class="publication-project-content">
+              <h4>Conference Paper | 2019</h4><br>
+              <h3>
+                Deep Learning for Prostate Cancer Detection and Gleason Scoring Using Biopsy and Multiparametric MRI Data
+              </h3>
+              <p>
+                Explores deep learning applications in prostate cancer detection and Gleason grading using both MRI and biopsy image datasets.
+              </p><br>
+              <span>ISBI Conference Proceedings</span>
+            </div>
+
+            <div class="publication-project-references">
+              <br> <h4>References:</h4>
+              <ul>
+                <li>
+                  Campanella, G., Hanna, M. G., Geneslaw, L., Miraflor, A., Silva, V. W. K., Busam, K. J., Brogi, E., & Fuchs, T. J.
+                </li>
+              </ul>
+              <ul class="publication-project-keywords">
+                <li>Deep Learning</li>
+                <li>Gleason Score</li>
+                <li>Prostate Cancer</li>
+              </ul>
+            </div> <br>
+
+            <div>
+              <p>Presented at ISBI</p>
+              <h4>    
+              <a href="https://doi.org/10.1109/ISBI.2019.8759307" target="_blank" class="pub-view">Read Paper</a>
+              </h4>
+            </div>
+            
+          </div>
+
+        </section>
+      </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2026 - <span style="font-weight: bold;">AiMed Lab</span><br>
+      <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+      <br></p>
+  </footer>
 </body>
+<script src="scripts.js"></script>
 </html>
