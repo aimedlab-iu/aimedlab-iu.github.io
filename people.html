@@ -1,337 +1,177 @@
 <!DOCTYPE html>
-<!-- Developed by nesis media -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiMed Lab</title>
     <link rel="stylesheet" href="style.css">
-
-    <script src="https://kit.fontawesome.com/c408a3e18e.js" crossorigin="anonymous"></script>
-
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <title>People</title>
 </head>
 <body>
+    <main>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar" style="background: #2f4097;">
-      <div class="max-width">
-          <div class="logo" ><a>Aimed lab</a></div>
-          <ul class="menu">
-              <li><a href="index.html" class="menu-btn">Home</a></li>
-              <li><a href="about.html" class="menu-btn">About</a></li>
-              <div class="dropdown">
-                  <li><a class="menu-btn" style="pointer-events: none; word-spacing: 5px;">Explore <i class="fa-solid fa-caret-down" style="right: 500px;"></i></a></li>
-                  <div class="dropdown-options">
-                    <a href="research.html">Research</a>
-                    <br>
-                    <a href="publications.html">Publications</a>
-                    <br>
-                    <a href="project.html">Projects</a>
-                  </div>
-                </div>
-                <li><a href="people.html" class="menu-btn">People</a></li>
-                <li><a href="contact.html" class="menu-btn">Conatct</a></li>
-          </ul>
+    <nav class="navbar">
+        
+        <div class="nav-logo">
+
+          <div class="iu-logo" >
+            <img class="nav-logo-iu"src="imgs/IU-white.png" alt="IU Logo">
+            <span>Indianapolis</span>
+          </div>
+
+          <div class="lab-info">
+            <h4>AIMED Lab</h4>
+            <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+          </div>
+        </div>
+
+        <div class="menu-hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="nav-items">
+                <li><a href="index.html" class="menu-btn">Home</a></li>
+                <li><a href="research.html" class="menu-btn">Research</a></li>
+                <li><a href="publications.html" class="menu-btn">Publications</a></li>
+                <li><a href="people.html" class="menu-btn nav-active">People</a></li>
+                <li><a href="software.html" class="menu-btn">Software</a></li>
+                <li><a href="teaching.html" class="menu-btn">Teaching</a></li>
+                <li><a href="contact.html" class="menu-btn">Contact</a></li>
+        </ul>
           <div class="menu-btn">
             <i class="fas fa-bars" style="font-weight: light"></i>
           </div>
-      </div>
-  </nav>
+    </nav>
+      <section class="people">
+        <section class="people-container">
+            <h2>Our <span style="color: var(--primary-color);">Team</span></h2>
+            <p>Meet the brilliant minds behind our research. From seasoned researchers to emerging talent, our diverse team drives innovation in educational technology.</p>
+          <!-- <hr> -->
+        </section>
 
-<br><br>
-  
-  <!-- home section start -->
-   <section class="team-section">
-    <h2>Our <span>Team</span></h2>
-    <p>Meet the brilliant minds behind our research. From seasoned researchers to emerging talent, our diverse team drives innovation in educational technology.</p>
+        <section class="people-main">
+          <div class="people-main-container">
+            <div class="people-professor">
+                <h3>Dr. Rakesh Shirakar</h3>
+            </div>
+            <div class="people-professor-content">
+              <div class="people-professor-content-item">
+                <h4></h4>Research Director</h4>
+                <br><br>
+                <p>Rakesh Shiradkar, Ph.D., is a healthcare informatics and data scientist specializing in AI-assisted technologies utilizing multi-modal medical data (imaging, genomics, and health records) to advance healthcare management. Formerly an assistant professor at Emory University and Georgia Tech, he completed postdoctoral training at Case Western Reserve University. Dr. Shiradkar leads a Mike Slive Foundation project on AI-based tools for predicting prostate cancer outcomes and has previously secured a $542,293 Department of Defense grant for noninvasive prostate cancer risk stratification using advanced imaging techniques.</p>
+              </div>
+            </div>
+          </div>
 
-    <h3 style="margin-bottom: 30px;">Lead Professor</h3>
+          <div class="people-main-container">
+            <div class="people-professor">
+                <h3>Grad (Ph. D) Students</h3>
+                <br>
+            </div>
+            <div class="people-group">
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>YB</h4>
+                </div>
+                <h4>Yamlak</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>SS</h4>
+                </div>
+                <h4>Sumedh</h4>
+              </div>
+            </div>
+          </div>
 
-    <div class="professor">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/rakesh-shiradkar.jpeg"></div>
-        <h3>Professor Rakesh Shiradkar</h3>
-        <h4>Research Director</h4>
-        <p>Rakesh Shiradkar, Ph.D., is a healthcare informatics and data scientist specializing in AI-assisted technologies utilizing multi-modal medical data (imaging, genomics, and health records) to advance healthcare management. Formerly an assistant professor at Emory University and Georgia Tech, he completed postdoctoral training at Case Western Reserve University.
-          Dr. Shiradkar leads a Mike Slive Foundation project on AI-based tools for predicting prostate cancer outcomes and has previously secured a $542,293 Department of Defense grant for noninvasive prostate cancer risk stratification using advanced imaging techniques.</p>
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div> -->
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
+          <div class="people-main-container">
+            <div class="people-professor">
+                <h3>Masters Students</h3>
+                <br>
+            </div>
+            <div class="people-group">
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>V</h4>
+                </div>
+                <h4>Vaikatesh</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>S</h4>
+                </div>
+                <h4>Sumant</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>A</h4>
+                </div>
+                <h4>Aakiti</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>A</h4>
+                </div>
+                <h4>Ambuka</h4>
+              </div>
+            </div>
+          </div>
 
-<br><br>
-    <h3 style="margin-bottom: 30px;">Ph.D Students</h3>
+          <div class="people-main-container">
+            <div class="people-professor">
+                <h3>Undergraduate Students</h3>
+                <br>
+            </div>
+            <div class="people-group">
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>OL</h4>
+                </div>
+                <h4>Oluwasoji Lasaki</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>R</h4>
+                </div>
+                <h4>Rushil</h4>
+              </div>
+            </div>
+          </div>
 
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="Imgs/profiles//sumedh.png"></div>
-        <h3>Sumedh Sonawane</h3>
-        <h4>Bioinformatics</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <p>Leading research in adaptive learning systems with 15+ years experience in HCI.</p> -->
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        < <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
+          <div class="people-main-container">
+            <div class="people-professor">
+                <h3>Alumni</h3>
+                <br>
+            </div>
+            <div class="people-group">
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>JD</h4>
+                </div>
+                <h4>John Doe</h4>
+              </div>
+              <div class="people-professor-content-item">
+                <div class="people-circle">
+                  <h4>JD</h4>
+                </div>
+                <h4>Jane Doe</h4>
+              </div>
+            </div>
+          </div>
 
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/image.png"></div>
-        <h3>Yamlak Asrat Bogale</h3>
-        <h4>Bioinformatics</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <h4>Co-Principal Investigator</h4>
-        <p>Expert in AI applications for education and automated assessment systems.</p> -->
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div>
-        <!- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <br><br>
-    <h3 style="margin-bottom: 30px;">Masters Students</h3>
-
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/WhatsApp Image 2025-10-09 at 16.33.23.jpeg"></div>
-        <h3>Shishir Biwalkar</h3>
-        <h4>Bioinformatics</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <p>Leading research in adaptive learning systems with 15+ years experience in HCI.</p> -->
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/IMG_2634.jpeg"></div>
-        <h3>Dihitha Baddula </h3>
-        <h4>Health informatics</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div>
-        <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
-
-    <br>
-    <div class="team-grid">
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/Minoti.jpg"></div>
-        <h3>Minoti Kedare</h3>
-        <h4>Health informatics</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div>
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
-
-    <br><br>
-    <h3 style="margin-bottom: 30px;">Undergraduates</h3>
-
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/IMG_1432.JPG"></div>
-        <h3>Soji Lasaki</h3>
-        <h4>Coomputer Science</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%;; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/user.png"></div>
-        <h3>Kaylyn Alducin</h3>
-        <h4>Neuroscience</h4>
-        <hr><br>
-        <h5>Indiana University Indianapolis</h5> 
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div> -->
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
-
-    <br>
-    
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/nora_cesljarev.jpg"></div>
-        <h3>Nora Cesljarev</h3>
-        <h4>Intelligent Systems Engineering</h4>
-        <hr><br>
-        <h5>IU Bloomington</h5>
-        <!-- <h4>Principal Investigator</h4>
-        <p>Leading research in adaptive learning systems with 15+ years experience in HCI.</p> -->
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%;; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/user.png"></div>
-        <h3>Pranav Sompalle</h3>
-        <!-- <h4>Co-Principal Investigator</h4>
-        <p>Expert in AI applications for education and automated assessment systems.</p> -->
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div> -->
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
-
-    <br>
-    
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%;; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/user.png"></div>
-        <h3>Natasha V</h3>
-        <!-- <h4>Principal Investigator</h4>
-        <p>Leading research in adaptive learning systems with 15+ years experience in HCI.</p> -->
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        <!<div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
-
-    <br><br>
-
-    <h3 style="margin-bottom: 30px;">High School Students</h3>
-
-    <div class="team-grid">
-      <!-- Card 1 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%;; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/user.png"></div>
-        <h3>Abhay Sista</h3>
-        <!-- <h4>Principal Investigator</h4>
-        <p>Leading research in adaptive learning systems with 15+ years experience in HCI.</p> -->
-        <!-- <div class="tags">
-          <span>Human-Computer Interaction</span>
-          <span>Educational Technology</span>
-        </div>
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-
-      <!-- Card 2 -->
-      <div class="team-card">
-        <div><img style="border-radius: 50%;; object-fit: cover; width:70px; height: 70px" src="imgs/profiles/user.png"></div>
-        <h3>Ryan Karim</h3>
-        <!-- <h4>Co-Principal Investigator</h4>
-        <p>Expert in AI applications for education and automated assessment systems.</p> -->
-        <!-- <div class="tags">
-          <span>Machine Learning</span>
-          <span>Natural Language Processing</span>
-        </div>
-        <!-- <div class="icons">
-          <a href="#">📧</a>
-          <a href="#">🔗</a>
-          <a href="#">👤</a>
-        </div> -->
-      </div>
-    </div>
+    </main>
 
 
-
-
-    
-  </section>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>Copyright &copy; 2026 - <span style="font-weight: bold;">AiMed Lab</span><br>
+      <span>AI-Integrated Multimodal Imaging for Precision Medicine</span>
+      <br></p>
+  </footer>
 
 </body>
+<script src="scripts.js"></script>
 </html>
