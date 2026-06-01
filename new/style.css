@@ -190,6 +190,17 @@ main {
     flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 200px;
+        width: auto;
+    }
+    .carousel-caption {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
 /* animation */
 @keyframes scroll {
     0% {
@@ -246,9 +257,27 @@ main {
     margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lab-description {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
 .lab-description {
     flex: 1;
     margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .vision-list {
+        padding: 1rem;
+    }
 }
 
 .vision-list{
@@ -312,6 +341,22 @@ main {
     height: 0.4px;
     background-color: #ccc;
     margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .research-area {
+        padding: 1rem;
+    }
+
+    .research-items {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .research-item {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 /* Research area end */
@@ -385,6 +430,26 @@ main {
     width:10px;
     margin: 1rem 0;
 }
+
+@media (max-width: 768px) {
+    .news {
+        padding: 1rem;
+    }
+
+    .news-item {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .news-items {
+        gap: 2rem;
+    }
+
+    .news-items img {
+        width: 100%;
+        height: auto;
+    }
+}
 /* news section end */
 
 
@@ -432,6 +497,18 @@ main {
 
 .contact-person-info span {
     margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .contact-lab {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact-info-person {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 /* contact section end */
@@ -720,6 +797,150 @@ main {
 }
 
 /* publications end */
+
+/* people section start */
+
+.people {
+    /* padding: 2rem;     */
+    justify-content: center;
+}
+
+.people-container{
+    padding: 2rem 1rem 1rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEBEB;
+}
+
+.people-container h2{
+    text-align: center;
+}
+
+.people-container p{
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.people-main {
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.people-main-container {
+    text-align: center;
+    max-width: 1400px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 2rem 2rem;
+    gap: 1rem;
+    border: 1px solid #ccc;
+}
+
+.people-group{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.people-circle{
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.people-professor-content-item{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .people-main-container {
+        padding: 1rem;
+    }
+
+    .people-group {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* people end */
+
+/* software section */
+
+.software {
+    /* padding: 2rem;     */
+    justify-content: center;
+}
+
+.software-container{
+    padding: 2rem 1rem 1rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEBEB;
+}
+
+
+.software-container h2{
+    text-align: center;
+}
+
+.software-container p{
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+
+.software-main {
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.software-main-container {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* flex-direction: column; */
+    margin-bottom: 1rem;
+    padding: 2rem 2rem;
+    gap: 7rem;
+    border: 1px solid #ccc;
+}
+
+.software-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .software-main-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+/* software section start */
 /* footer begins */
 
 footer {
