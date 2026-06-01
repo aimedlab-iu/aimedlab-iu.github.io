@@ -871,6 +871,9 @@ main {
 }
 
 @media (max-width: 768px) {
+    .people-container p{
+        padding: 0 1rem;
+    }
     .people-main-container {
         padding: 1rem;
     }
